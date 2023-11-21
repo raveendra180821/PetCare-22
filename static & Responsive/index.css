@@ -3,6 +3,9 @@
 body{
     margin: 0;
 }
+body::-webkit-scrollbar {
+    width: 0;
+}
 .bg-container{
     height: 100vh;
 }
@@ -13,12 +16,12 @@ body{
     align-items: center;
     padding: 6px 14px;
     position: fixed;
-    top: 0;
-    width: 100%;
+    width: 94%;
 }
 @media screen and (min-width: 768px) {
     .navbar{
         padding: 8px 16px;
+        width: 99%;
     }
 }
 .logo-container{
@@ -100,6 +103,7 @@ body{
 @media screen and (min-width: 768px) {
     .home-sec{
         min-height: 90vh;
+        padding-top: 100px;
     }
 }
 
@@ -203,7 +207,8 @@ body{
     font-family: 'Open Sans';
     font-size: 12px;
     color: whitesmoke;
-    padding: 10px 20px ;
+    padding: 50px 20px 10px 20px ;
+
 }
 @media screen and (min-width: 768px) {
     .about-sec{
@@ -277,13 +282,13 @@ h1,p{
     font-family: 'Open Sans';
     font-size: 12px;
     color: whitesmoke;
-    padding: 10px;
+    padding: 50px 10px 10px 10px;
     min-height: 100vh;
 }
 @media screen and (min-width: 768px) {
     .contact-sec{
         font-size:16px;
-        padding: 20px 40px;
+        padding: 100px 40px 20px 40px;
     }
 }
 .contact-heading{
@@ -349,7 +354,7 @@ button:hover{
 }
 .portfolio-sec{
     border: 20px solid #43271b;
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
     background-color: #926b56;
     font-family: 'Roboto';
     font-weight: 600;
@@ -365,6 +370,9 @@ button:hover{
     text-align: center;
 }
 @media screen and (min-width: 768px){
+    .portfolio-sec{
+        padding-top: 100px;
+    }
     .portfolio-heading{
         font-size: 36px;
     }
@@ -399,7 +407,7 @@ button:hover{
 }
 
 .features{
-    padding: 30px;
+    padding: 50px 30px 30px 30px;
 }
 .features-text{
     font-family: 'Roboto';
@@ -412,7 +420,7 @@ button:hover{
         font-size: 30px;
     }
     .features{
-        padding: 50px;
+        padding: 100px 50px 50px 50px ;
     }
 }
 .features-heading{
