@@ -19,6 +19,7 @@ body::-webkit-scrollbar {
     width: 94%;
     z-index: 2;
 }
+
 @media screen and (min-width: 768px) {
     .navbar{
         padding: 8px 16px;
@@ -91,6 +92,12 @@ body::-webkit-scrollbar {
 @media screen and (min-width: 768px) {
     .nav-item{
         margin: 0 20px;
+    }
+    .nav-item:hover{
+        background-color: rgb(218, 235, 242);
+        color: rgb(33, 33, 139);
+        padding: 10px 16px;
+        border-radius: 8px;
     }
 }
 
@@ -350,13 +357,18 @@ label{
     cursor: pointer;
     outline: none;
 }
-button:hover{
-    background-color: #baba1e;
+.send-button:hover{
+    background-color: green;
+    border-radius: 10px; 
+    color: white;
+    font-weight: 500;
+    width: 100px;
+    padding: 10px 16px; 
+    font-size: 18px;
 }
 .portfolio-sec{
-    border: 20px solid #43271b;
     padding: 50px 20px 20px 20px;
-    background-color: #926b56;
+    background-color: #e6deef;
     font-family: 'Roboto';
     font-weight: 600;
     color: #d4d4ce;
@@ -365,10 +377,13 @@ button:hover{
 .portfolio-heading{
     font-family: 'Open Sans';
     font-size: 26px;
-    background-color: #bab6be;
-    border-radius: 49%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: auto;
     color: #09294f;
     text-align: center;
+    max-width: 200px;
+    padding: 15px;
 }
 @media screen and (min-width: 768px){
     .portfolio-sec{
@@ -376,10 +391,11 @@ button:hover{
     }
     .portfolio-heading{
         font-size: 36px;
+        width: 300px;
+        padding: 10px 20px;
     }
 }
 .portfolio-container{
-    border: 10px solid #c1c0c0;
     border-radius: 20px;
     width: 90%;
     max-width: 650px;
@@ -389,6 +405,11 @@ button:hover{
     overflow-y: scroll;
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 6px 14px 0 rgb(145, 139, 139);
+}
+.portfolio-container::-webkit-scrollbar {
+    width: 0;
 }
 .portfolio-img{
     width: 100%;
@@ -405,6 +426,7 @@ button:hover{
     cursor: pointer;
     outline: none;
     display: block;
+    margin-top: 10px;
 }
 
 .features{
